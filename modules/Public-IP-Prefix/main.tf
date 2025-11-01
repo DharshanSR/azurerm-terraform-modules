@@ -7,4 +7,5 @@ resource "azurerm_public_ip_prefix" "public_ip_prefix" {
   prefix_length       = var.prefix_length
   sku_tier            = var.sku_tier
   zones               = var.zones
+  tags                = var.tags
 }

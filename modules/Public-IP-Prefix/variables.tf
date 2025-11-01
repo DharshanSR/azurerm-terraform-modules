@@ -41,3 +41,9 @@ variable "zones" {
   type        = list(string)
   default     = []
 }
+
+variable "tags" {
+  description = "A map of tags to assign to the Public IP Prefix resource"
+  type        = map(string)
+  default     = {}
+}

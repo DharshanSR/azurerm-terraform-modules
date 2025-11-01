@@ -8,11 +8,6 @@ output "name" {
   value       = azurerm_public_ip_prefix.public_ip_prefix.name
 }
 
-output "ip_prefix" {
-  description = "The IP prefix value that was allocated"
-  value       = azurerm_public_ip_prefix.public_ip_prefix.ip_prefix
-}
-
 output "prefix_length" {
   description = "The length of the Public IP Prefix"
   value       = azurerm_public_ip_prefix.public_ip_prefix.prefix_length
