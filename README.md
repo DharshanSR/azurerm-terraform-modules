@@ -35,6 +35,15 @@ This repository provides a comprehensive collection of production-ready, reusabl
 | **[Network-Interface](./modules/Network-Interface)** | `v1.0` | `azurerm_network_interface` | VM network interface with IP configuration options | ✅ Stable | [📖 Docs](./docs/Network-Interface.md) |
 | **[Subnet-NSG-Association](./modules/Subnet-NSG-Association)** | `v1.0` | `azurerm_subnet_network_security_group_association` | Secure subnet-NSG binding | ✅ Stable | [📖 Docs](./docs/Subnet-NSG-Association.md) |
 
+### Load Balancing & Traffic Management
+
+| Module | Version | Azure Resource | Description | Status | Documentation |
+|--------|---------|----------------|-------------|--------|---------------|
+| **[Application-Load-Balancer](./modules/Application-Load-Balancer)** | `v1.0` | `azurerm_application_load_balancer` | Layer 7 load balancer for HTTP/HTTPS traffic distribution | ✅ Stable | [📖 Docs](./docs/Application-Load-Balancer.md) |
+| **[Application-Load-Balancer-Frontend](./modules/Application-Load-Balancer-Frontend)** | `v1.0` | `azurerm_application_load_balancer_frontend` | Frontend configuration for Application Load Balancer | ✅ Stable | [📖 Docs](./docs/Application-Load-Balancer-Frontend.md) |
+| **[Application-Load-Balancer-Security-Policy](./modules/Application-Load-Balancer-Security-Policy)** | `v1.0` | `azurerm_application_load_balancer_security_policy` | WAF security policy attachment for Application Load Balancer | ✅ Stable | [📖 Docs](./docs/Application-Load-Balancer-Security-Policy.md) |
+| **[Application-Load-Balancer-Subnet-Association](./modules/Application-Load-Balancer-Subnet-Association)** | `v1.0` | `azurerm_application_load_balancer_subnet_association` | Subnet association for Application Load Balancer | ✅ Stable | [📖 Docs](./docs/Application-Load-Balancer-Subnet-Association.md) |
+
 ### Compute Resources
 
 | Module | Version | Azure Resource | Description | Status | Documentation |
