@@ -12,43 +12,56 @@ This repository provides a comprehensive collection of production-ready, reusabl
 
 ### Core Infrastructure
 
-| Module | Version | Azure Resource | Description | Status | Documentation |
-|--------|---------|----------------|-------------|--------|---------------|
-| **[Resource-Group](./modules/Resource-Group)** | `v1.0` | `azurerm_resource_group` | Foundation resource group with standardized naming | ✅ Stable | [📖 Docs](./docs/Resource-Group.md) |
-| **[Virtual-Network](./modules/Virtual-Network)** | `v1.0` | `azurerm_virtual_network` | Enterprise VNet with customizable address spaces | ✅ Stable | [📖 Docs](./docs/Virtual-Network.md) |
-| **[Subnet](./modules/Subnet)** | `v1.0` | `azurerm_subnet` | Flexible subnet configuration with delegation support | ✅ Stable | [📖 Docs](./docs/Subnet.md) |
+| Module | Azure Resource | Description | Documentation |
+|--------|----------------|-------------|--------------|
+| **[Resource-Group](./modules/Resource-Group)** | `azurerm_resource_group` | Foundation resource group with standardized naming | [📖 Docs](./docs/Resource-Group.md) |
+| **[Virtual-Network](./modules/Virtual-Network)** | `azurerm_virtual_network` | Enterprise VNet with customizable address spaces | [📖 Docs](./docs/Virtual-Network.md) |
+| **[Subnet](./modules/Subnet)** | `azurerm_subnet` | Flexible subnet configuration with delegation support | [📖 Docs](./docs/Subnet.md) |
 
 ### Security & Access
 
-| Module | Version | Azure Resource | Description | Status | Documentation |
-|--------|---------|----------------|-------------|--------|---------------|
-| **[Network-Security-Group](./modules/Network-Security-Group)** | `v1.0` | `azurerm_network_security_group` | NSG with standardized security configurations | ✅ Stable | [📖 Docs](./docs/Network-Security-Group.md) |
-| **[Network-Security-Rule](./modules/Network-Security-Rule)** | `v1.0` | `azurerm_network_security_rule` | Granular security rule management | ✅ Stable | [📖 Docs](./docs/Network-Security-Rule.md) |
-| **[Bastion-Host](./modules/Bastion-Host)** | `v1.0` | `azurerm_bastion_host` | Secure RDP/SSH access with Standard/Basic SKU support | ✅ Stable | [📖 Docs](./docs/Bastion-Host.md) |
+| Module | Azure Resource | Description | Documentation |
+|--------|----------------|-------------|--------------|
+| **[Network-Security-Group](./modules/Network-Security-Group)** | `azurerm_network_security_group` | NSG with standardized security configurations | [📖 Docs](./docs/Network-Security-Group.md) |
+| **[Network-Security-Rule](./modules/Network-Security-Rule)** | `azurerm_network_security_rule` | Granular security rule management | [📖 Docs](./docs/Network-Security-Rule.md) |
+| **[Bastion-Host](./modules/Bastion-Host)** | `azurerm_bastion_host` | Secure RDP/SSH access with Standard/Basic SKU support | [📖 Docs](./docs/Bastion-Host.md) |
 
 ### Networking & Connectivity
 
-| Module | Version | Azure Resource | Description | Status | Documentation |
-|--------|---------|----------------|-------------|--------|---------------|
-| **[Public-IP](./modules/Public-IP)** | `v1.0` | `azurerm_public_ip` | Static/Dynamic public IP with Standard/Basic SKU | ✅ Stable | [📖 Docs](./docs/Public-IP.md) |
-| **[Public-IP-Prefix](./modules/Public-IP-Prefix)** | `v1.0` | `azurerm_public_ip_prefix` | Reserved public IP ranges for predictable addressing | ✅ Stable | [📖 Docs](./docs/Public-IP-Prefix.md) |
-| **[Network-Interface](./modules/Network-Interface)** | `v1.0` | `azurerm_network_interface` | VM network interface with IP configuration options | ✅ Stable | [📖 Docs](./docs/Network-Interface.md) |
-| **[Subnet-NSG-Association](./modules/Subnet-NSG-Association)** | `v1.0` | `azurerm_subnet_network_security_group_association` | Secure subnet-NSG binding | ✅ Stable | [📖 Docs](./docs/Subnet-NSG-Association.md) |
+| Module | Azure Resource | Description | Documentation |
+|--------|----------------|-------------|--------------|
+| **[Public-IP](./modules/Public-IP)** | `azurerm_public_ip` | Static/Dynamic public IP with Standard/Basic SKU | [📖 Docs](./docs/Public-IP.md) |
+| **[Public-IP-Prefix](./modules/Public-IP-Prefix)** | `azurerm_public_ip_prefix` | Reserved public IP ranges for predictable addressing | [📖 Docs](./docs/Public-IP-Prefix.md) |
+| **[Network-Interface](./modules/Network-Interface)** | `azurerm_network_interface` | VM network interface with IP configuration options | [📖 Docs](./docs/Network-Interface.md) |
+| **[Subnet-NSG-Association](./modules/Subnet-NSG-Association)** | `azurerm_subnet_network_security_group_association` | Secure subnet-NSG binding | [📖 Docs](./docs/Subnet-NSG-Association.md) |
 
 ### Load Balancing & Traffic Management
 
-| Module | Version | Azure Resource | Description | Status | Documentation |
-|--------|---------|----------------|-------------|--------|---------------|
-| **[Application-Load-Balancer](./modules/Application-Load-Balancer)** | `v1.0` | `azurerm_application_load_balancer` | Layer 7 load balancer for HTTP/HTTPS traffic distribution | ✅ Stable | [📖 Docs](./docs/Application-Load-Balancer.md) |
-| **[Application-Load-Balancer-Frontend](./modules/Application-Load-Balancer-Frontend)** | `v1.0` | `azurerm_application_load_balancer_frontend` | Frontend configuration for Application Load Balancer | ✅ Stable | [📖 Docs](./docs/Application-Load-Balancer-Frontend.md) |
-| **[Application-Load-Balancer-Security-Policy](./modules/Application-Load-Balancer-Security-Policy)** | `v1.0` | `azurerm_application_load_balancer_security_policy` | WAF security policy attachment for Application Load Balancer | ✅ Stable | [📖 Docs](./docs/Application-Load-Balancer-Security-Policy.md) |
-| **[Application-Load-Balancer-Subnet-Association](./modules/Application-Load-Balancer-Subnet-Association)** | `v1.0` | `azurerm_application_load_balancer_subnet_association` | Subnet association for Application Load Balancer | ✅ Stable | [📖 Docs](./docs/Application-Load-Balancer-Subnet-Association.md) |
+| Module | Azure Resource | Description | Documentation |
+|--------|----------------|-------------|---------------|
+| **[Application-Load-Balancer](./modules/Application-Load-Balancer)** | `azurerm_application_load_balancer` | Layer 7 load balancer for HTTP/HTTPS traffic distribution | [📖 Docs](./docs/Application-Load-Balancer.md) |
+| **[Application-Load-Balancer-Frontend](./modules/Application-Load-Balancer-Frontend)** | `azurerm_application_load_balancer_frontend` | Frontend configuration for Application Load Balancer | [📖 Docs](./docs/Application-Load-Balancer-Frontend.md) |
+| **[Application-Load-Balancer-Security-Policy](./modules/Application-Load-Balancer-Security-Policy)** | `azurerm_application_load_balancer_security_policy` | WAF security policy attachment for Application Load Balancer | [📖 Docs](./docs/Application-Load-Balancer-Security-Policy.md) |
+| **[Application-Load-Balancer-Subnet-Association](./modules/Application-Load-Balancer-Subnet-Association)** | `azurerm_application_load_balancer_subnet_association` | Subnet association for Application Load Balancer | [📖 Docs](./docs/Application-Load-Balancer-Subnet-Association.md) |
 
 ### Compute Resources
 
-| Module | Version | Azure Resource | Description | Status | Documentation |
-|--------|---------|----------------|-------------|--------|---------------|
-| **[VM-Linux](./modules/VM-Linux)** | `v1.0` | `azurerm_linux_virtual_machine` | Enterprise Linux VMs with customizable configurations | ✅ Stable | [📖 Docs](./docs/VM-Linux.md) |
+| Module | Azure Resource | Description | Documentation |
+|--------|----------------|-------------|--------------|
+| **[VM-Linux](./modules/VM-Linux)** | `azurerm_linux_virtual_machine` | Enterprise Linux VMs with customizable configurations | [📖 Docs](./docs/VM-Linux.md) |
+
+### Storage & Data
+
+| Module | Azure Resource | Description | Documentation |
+|--------|----------------|-------------|---------------|
+| **[Storage-Account](./modules/Storage-Account)** | `azurerm_storage_account` | Scalable cloud storage with multiple tiers and security features | [📖 Docs](./docs/Storage-Account.md) |
+| **[Storage-Account-Customer-Managed-Key](./modules/Storage-Account-Customer-Managed-Key)** | `azurerm_storage_account_customer_managed_key` | Customer-managed encryption keys for enhanced security | [📖 Docs](./docs/Storage-Account-Customer-Managed-Key.md) |
+| **[Storage-Account-Local-User](./modules/Storage-Account-Local-User)** | `azurerm_storage_account_local_user` | SFTP access configuration with SSH key management | [📖 Docs](./docs/Storage-Account-Local-User.md) |
+| **[Storage-Account-Network-Rules](./modules/Storage-Account-Network-Rules)** | `azurerm_storage_account_network_rules` | Network access controls and firewall rules | [📖 Docs](./docs/Storage-Account-Network-Rules.md) |
+| **[Storage-Account-Queue-Properties](./modules/Storage-Account-Queue-Properties)** | `azurerm_storage_account_queue_properties` | Queue service configuration with CORS and metrics | [📖 Docs](./docs/Storage-Account-Queue-Properties.md) |
+| **[Storage-Account-Static-Website](./modules/Storage-Account-Static-Website)** | `azurerm_storage_account_static_website` | Static website hosting configuration | [📖 Docs](./docs/Storage-Account-Static-Website.md) |
+| **[Storage-Container](./modules/Storage-Container)** | `azurerm_storage_container` | Blob storage containers with access control | [📖 Docs](./docs/Storage-Container.md) |
+| **[Storage-Container-Immutability-Policy](./modules/Storage-Container-Immutability-Policy)** | `azurerm_storage_container_immutability_policy` | WORM compliance and data retention policies | [📖 Docs](./docs/Storage-Container-Immutability-Policy.md) |
 
 
 ## 🏗️ Module Architecture
