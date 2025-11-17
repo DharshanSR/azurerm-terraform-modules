@@ -50,6 +50,18 @@ This repository provides a comprehensive collection of production-ready, reusabl
 |--------|----------------|-------------|--------------|
 | **[VM-Linux](./modules/VM-Linux)** | `azurerm_linux_virtual_machine` | Enterprise Linux VMs with customizable configurations | [📖 Docs](./docs/VM-Linux.md) |
 
+### Security & Identity Management
+
+| Module | Azure Resource | Description | Documentation |
+|--------|----------------|-------------|---------------|
+| **[Key-Vault](./modules/Key-Vault)** | `azurerm_key_vault` | Centralized secrets, keys, and certificate management | [📖 Docs](./docs/Key-Vault.md) |
+| **[Key-Vault-Access-Policy](./modules/Key-Vault-Access-Policy)** | `azurerm_key_vault_access_policy` | Granular access control for Key Vault resources | [📖 Docs](./docs/Key-Vault-Access-Policy.md) |
+| **[Key-Vault-Secret](./modules/Key-Vault-Secret)** | `azurerm_key_vault_secret` | Secure storage for passwords, connection strings, and API keys | [📖 Docs](./docs/Key-Vault-Secret.md) |
+| **[Key-Vault-Key](./modules/Key-Vault-Key)** | `azurerm_key_vault_key` | Cryptographic keys for encryption, signing, and verification | [📖 Docs](./docs/Key-Vault-Key.md) |
+| **[Key-Vault-Certificate](./modules/Key-Vault-Certificate)** | `azurerm_key_vault_certificate` | SSL/TLS certificates with automated management | [📖 Docs](./docs/Key-Vault-Certificate.md) |
+| **[Key-Vault-Certificate-Contacts](./modules/Key-Vault-Certificate-Contacts)** | `azurerm_key_vault_certificate_contacts` | Certificate lifecycle notification contacts | [📖 Docs](./docs/Key-Vault-Certificate-Contacts.md) |
+| **[Key-Vault-Certificate-Issuer](./modules/Key-Vault-Certificate-Issuer)** | `azurerm_key_vault_certificate_issuer` | Certificate authority integration for automated certificate issuance | [📖 Docs](./docs/Key-Vault-Certificate-Issuer.md) |
+
 ### Storage & Data
 
 | Module | Azure Resource | Description | Documentation |
