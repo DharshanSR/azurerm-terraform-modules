@@ -1,8 +1,7 @@
-````markdown
 # VM Windows Module
 
 [![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=flat&logo=terraform&logoColor=white)](https://www.terraform.io/)
-[![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=flat&logo=microsoftazure&logoColor=white)](https://azure.Microsoft.com/)
+[![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=flat&logo=microsoftazure&logoColor=white)](https://azure.microsoft.com/)
 
 ## What is an Azure Windows Virtual Machine?
 
@@ -58,7 +57,6 @@ module "web_server" {
   admin_username       = "webadmin"
   admin_password       = var.web_admin_password
   source_image_sku     = "2022-datacenter-azure-edition"
-  timezone             = "Eastern Standard Time"
 }
 
 # Application Server
@@ -90,8 +88,6 @@ module "db_server" {
   admin_password           = var.db_admin_password
   source_image_sku         = "2022-datacenter-azure-edition"
   os_disk_storage_type     = "Premium_LRS"
-  enable_automatic_updates = true
-  patch_mode               = "AutomaticByPlatform"
 }
 ```
 
@@ -121,11 +117,6 @@ module "custom_windows_vm" {
   os_disk_caching      = "ReadWrite"
   os_disk_storage_type = "Premium_LRS"
   
-  # Update & timezone configuration
-  enable_automatic_updates = true
-  patch_mode               = "AutomaticByPlatform"
-  timezone                 = "Pacific Standard Time"
-  
   tags = {
     Environment = "Production"
     Application = "CustomApp"
@@ -143,24 +134,11 @@ Common SKU values for Windows Server:
 - `2019-datacenter` - Windows Server 2019 Datacenter
 - `2016-datacenter` - Windows Server 2016 Datacenter
 
-## Timezone Reference
-
-Common timezone values:
-- `UTC` - Coordinated Universal Time
-- `Eastern Standard Time` - US Eastern
-- `Pacific Standard Time` - US Pacific
-- `Central Standard Time` - US Central
-- `GMT Standard Time` - London
-
-For complete timezone list, see: [Microsoft Time Zone Index Values](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones)
-
 ## Security Best Practices
 
 1. **Password Complexity**: Ensure admin passwords meet Azure's complexity requirements (12-123 characters, with uppercase, lowercase, numbers, and special characters)
-2. **Automatic Updates**: Enable automatic updates in production environments
-3. **Patch Management**: Use `AutomaticByPlatform` for consistent patching
-4. **Network Security**: Always associate VMs with NSGs for traffic control
-5. **Managed Identity**: Consider using managed identities for application authentication
+2. **Network Security**: Always associate VMs with NSGs for traffic control
+3. **Managed Identity**: Consider using managed identities for application authentication
 
 ## Inputs
 
@@ -180,9 +158,6 @@ For complete timezone list, see: [Microsoft Time Zone Index Values](https://docs
 | `source_image_offer` | Offer of the image used to create the VM | `string` | `"WindowsServer"` | no |
 | `source_image_sku` | SKU of the image used to create the VM | `string` | n/a | yes |
 | `source_image_version` | Version of the image used to create the VM | `string` | `"latest"` | no |
-| `enable_automatic_updates` | Specifies whether automatic updates are enabled | `bool` | `true` | no |
-| `patch_mode` | Mode of in-guest patching (Manual, AutomaticByOS, AutomaticByPlatform) | `string` | `"AutomaticByOS"` | no |
-| `timezone` | Time zone of the Virtual Machine | `string` | `"UTC"` | no |
 | `tags` | A map of tags to assign to the Virtual Machine | `map(string)` | `{}` | no |
 
 ## Outputs
@@ -205,4 +180,3 @@ For complete timezone list, see: [Microsoft Time Zone Index Values](https://docs
 ## Resources
 
 - [azurerm_windows_virtual_machine](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/windows_virtual_machine)
-````
