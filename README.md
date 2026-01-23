@@ -49,6 +49,7 @@ This repository provides a comprehensive collection of production-ready, reusabl
 | Module | Azure Resource | Description | Documentation |
 |--------|----------------|-------------|--------------|
 | **[VM-Linux](./modules/VM-Linux)** | `azurerm_linux_virtual_machine` | Enterprise Linux VMs with customizable configurations | [📖 Docs](./docs/VM-Linux.md) |
+| **[VM-Windows](./modules/VM-Windows)** | `azurerm_windows_virtual_machine` | Enterprise Windows VMs with automatic update support | [📖 Docs](./docs/VM-Windows.md) |
 
 ### Security & Identity Management
 
